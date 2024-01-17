@@ -42,11 +42,11 @@
     </div>
   </nav>
 </header>
-
+<main>
 <!--    hero section   -->
 <section id="home">
   <div class="container flex flex-col items-center gap-10 md:flex-row md:items-stretch md:my-12">
-    <div class="mx-auto pt-5 md:basis-1/2  lg:basis-2/5 animate-movingY"><img src="../images/home page/home-img.jpg" alt="home-img" class="w-100 h-auto  md:h-full "></div>
+    <div class="mx-auto pt-5 md:basis-2/3  lg:basis-2/5 animate-movingY"><img src="../images/home page/home-img.jpg" alt="home-img" class="w-100 h-auto  md:h-full "></div>
     <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
       <h1 class="home_title uppercase">Hangout Where Hunger Hangs Out</h1>
       <div class="separator mx-auto md:mx-0"></div>
@@ -72,7 +72,73 @@
     </div>
   </div>
 </section>
-<main></main>
+<!--   category section   -->
+<section id="category">
+  <div class="container flex flex-col gap-5 md:flex-row !md:pt-0">
+
+    <!-- card 1 -->
+    <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+      <div class="basis-1/3 relative"><img src="../images/home page/category1.jpg" alt="category_image" class="absolute max-w-96 h-20 -bottom-4 -left-4"></div>
+      <div>
+        <div class="mb-2">
+          <h4 class="card_title">Food</h4>
+          <p class="text-xs">Unforgettable bite</p>
+        </div>
+        <a href="#" class="text-rose-700 font-bold cursor-pointer">Buy Now</a>
+      </div>
+    </div>
+    
+    <!-- card 2 -->
+    <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+      <div class="basis-1/3 relative"><img src="../images/home page/category2.jpg" alt="category_image" class="absolute max-w-96 h-20 -bottom-4 -left-4"></div>
+      <div>
+        <div class="mb-2">
+          <h4 class="card_title">Snack</h4>
+          <p class="text-xs">Snack Like No Other</p>
+        </div>
+        <a href="#" class="text-secondaryColor font-bold cursor-pointer">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+      <div class="basis-1/3 relative"><img src="../images/home page/category3.jpg" alt="category_image" class="absolute max-w-96 h-20 -bottom-4 -left-2"></div>
+      <div>
+        <div class="mb-2">
+          <h4 class="card_title">Beverage</h4>
+          <p class="text-xs">Unleash Your Energy</p>
+        </div>
+        <a href="#" class="text-secondaryColor font-bold cursor-pointer">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="promo">
+  <div class="flex flex-col container gap-5 lg:gap-10 lg:flex-row">
+    <h3 class="home_title text-3xl ">Payday Got You Feeling Down? We've Got You Covered!</h3>
+
+    <!-- card 1 -->
+    <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg">      
+      <img src="../images/home page/promo1.jpg" alt="promo1" class="mx-auto w-full">
+      <div class="space-y-2 pt-5">
+        <p class="text-xs text-secondaryColor">Payday promo</p>
+        <h3 class="card_title">get a 10% discount on payday week</h3>
+        <p class="paragraph pb-3">Treat yourself to a delicious and affordable meal with our special payday deals.</p>
+        <a href="#" class="btn btn-primary ml-12">Order Now</a>
+      </div>
+    </div>
+    <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg">      
+      <img src="../images/home page/promo2.jpg" alt="promo1" class="mx-auto w-40 ml-6 pb-2">
+      <div class="space-y-2 pt-5">
+        <p class="text-xs text-secondaryColor">Payday promo</p>
+        <h3 class="card_title">Free drink with any purchase over $10 </h3>
+        <p class="paragraph pb-3">End your meal on a high note with a beverage. Order now and fuel your fun!</p>
+        <a href="#" class="btn btn-primary ml-12 ">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 <script src="./main.js"></script>
 </body>
 </html>
