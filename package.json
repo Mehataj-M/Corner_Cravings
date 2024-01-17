@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./app/styles.css "
+    "build": "npx tailwindcss -i ./src/input.css -o ./app/styles.css --watch "
   },
   "keywords": [],
   "author": "",

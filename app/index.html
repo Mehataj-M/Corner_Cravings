@@ -23,24 +23,56 @@
         Corner <span class="text-secondaryColor">Cravings</span>
       </a>
     </div>
-    <div class="absolute top-0 left-0 bg-primaryColorLight w-full py-14 border-b border-secondaryColor">
-      <ul class="flex flex-col text-center gap-5">
-        <li><a href="#home" class="hover:text-secondaryColor duration-200 ease-in">Home</a></li>
-        <li><a href="#about" class="hover:text-secondaryColor duration-200 ease-in">About</a></li>
-        <li><a href="#menu" class="hover:text-secondaryColor duration-200 ease-in">Menu</a></li>
-        <li><a href="#review" class="hover:text-secondaryColor duration-200 ease-in">Review</a></li>
-        <li><a href="#contact" class="hover:text-secondaryColor duration-200 ease-in">Contact</a></li>
+    <div class="hidden absolute top-0 left-0 bg-primaryColorLight w-full py-14 border-b border-secondaryColor md:block md:py-0 md:border-none md:w-auto md:static md:ml-auto md:bg-primaryColor" id="nav-menu">
+      <ul class="flex flex-col text-center gap-5 md:flex-row">
+        <li><a href="#home" class="nav__link hover:text-secondaryColor duration-200 ease-in">Home</a></li>
+        <li><a href="#about" class="nav__link  hover:text-secondaryColor duration-200 ease-in">About</a></li>
+        <li><a href="#menu" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Menu</a></li>
+        <li><a href="#review" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Review</a></li>
+        <li><a href="#contact" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Contact</a></li>
       </ul>
-      <div><i class="fa-solid fa-xmark"></i></div>
+      <div class=" absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close"><i class="fa-solid fa-xmark"></i>
+      </div>
     </div>
-    <div>
-      <i class="fa-regular fa-moon"></i>
-      <div>
-        <i class="fa-solid fa-bars"></i>
+    <div class="flex items-center gap-5">
+      <i class="fa-regular fa-moon ml-4 cursor-pointer text-2xl "></i>
+      <div class="md:hidden" id="hamburger">
+        <i class="fa-solid fa-bars cursor-pointer text-2xl "></i>
       </div>
     </div>
   </nav>
 </header>
-  
+
+<!--    hero section   -->
+<section id="home">
+  <div class="container flex flex-col items-center gap-10 md:flex-row md:items-stretch md:my-12">
+    <div class="mx-auto pt-5 md:basis-1/2  lg:basis-2/5 animate-movingY"><img src="../images/home page/home-img.jpg" alt="home-img" class="w-100 h-auto  md:h-full "></div>
+    <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+      <h1 class="home_title uppercase">Hangout Where Hunger Hangs Out</h1>
+      <div class="separator mx-auto md:mx-0"></div>
+      <p class="paragraph ">Corner Cravings isn't just a place to grab a quick bite; it's a hub for our community.Every bite of pizza and slice of pie brings people together, fueling conversations, laughter, and a sense of belonging. We're proud to be a part of your story, and we invite you to be a part of ours. Pull up a chair, stay a while, and let's build something special together, one delicious bite at a time.</p>
+      <div class="text-base flex gap-5 items-center justify-center py-10 md:justify-start md:gap-20">
+        <div class="text-center">
+          <i class="fa-solid fa-person-biking text-secondaryColor text-4xl "></i>
+          <br>
+          Quick
+        </div>
+        <div class="text-center">
+          <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+          <br>
+          Cravable
+        </div>
+        <div class="text-center">
+          <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+          <br>
+          Fulfilling
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary">Learn more</a>
+    </div>
+  </div>
+</section>
+<main></main>
+<script src="./main.js"></script>
 </body>
 </html>
