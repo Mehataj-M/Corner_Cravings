@@ -38,3 +38,9 @@
     @apply text-paragraphColor text-xs leading-5 lg:text-lg;
   }
 }
+
+
+.tabs ul li.active,
+.tabs ul li:hover {
+   @apply bg-secondaryColor text-blackColor;
+}
