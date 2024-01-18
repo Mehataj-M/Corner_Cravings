@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+  <!-- fav icon -->
+  <link rel="shortcut icon" href="../images/favicon.webp" type="image/x-icon">
+</head>
+<body>
+  <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 border-b border-secondaryColor">
+    <nav class="container justify-between items-center flex h-14 relative">
+      <div>
+        <a href="#" class="font-oswald uppercase text-2xl">
+          Corner <span class="text-secondaryColor">Cravings</span>
+        </a>
+      </div>
+      <div class="hidden absolute top-0 left-0 bg-primaryColorLight w-full py-14 border-b border-secondaryColor md:block md:py-0 md:border-none md:w-auto md:static md:ml-auto md:bg-primaryColor" id="nav-menu">
+        <ul class="flex flex-col text-center gap-5 md:flex-row">
+          <li><a href="#home" class="nav__link hover:text-secondaryColor duration-200 ease-in">Home</a></li>
+          <li><a href="#about" class="nav__link  hover:text-secondaryColor duration-200 ease-in">About</a></li>
+          <li><a href="#menu" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Menu</a></li>
+          <li><a href="#review" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Review</a></li>
+          <li><a href="#contact" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Contact</a></li>
+        </ul>
+        <div class=" absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close"><i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="flex items-center gap-5">
+        <i class="fa-regular fa-moon ml-4 cursor-pointer text-2xl "></i>
+        <div class="md:hidden" id="hamburger">
+          <i class="fa-solid fa-bars cursor-pointer text-2xl "></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="about" class="mt-16 md:mt-24">
+    <div class="container flex flex-col gap-10 md:flex-row md:items-stretch lg:items-stretch">
+      <div class="flex-1"><img src="../images/home page/about.jpeg" alt="about_image" class="rounded-lg md:w-100 md:h-full lg:h-full "></div>
+      <div class="flex-1">
+        <h2 class="section_title md:!text-5xl">Welcome to Flavortown !</h2>
+        <h4 class="capitalize text-xl text-secondaryColor py-3 lg:py-6">find food and drinks all in one place for your best taste.</h4>
+        <div class="seperator"></div>
+        <p class="paragraph">At Corner Cravings, We're a passionate team dedicated to serving up delicious, made-to-order meals that bring smiles to faces and satisfaction to bellies.
+        We believed that fast food didn't have to be greasy, flavorless, or unhealthy. We wanted to create a place where people could get fresh, high-quality ingredients, bold flavors, and friendly service, all without breaking the bank.
+        </p>
+        <ul class="grid grid-cols-2 py-5 space-y-1 lg:py-8">
+          <li class="text-xs text-whiteColor lg:text-base">
+            <i class="fa-solid fa-medal text-secondaryColor !text-2xl"></i> Quality Stuffs</li>
+            
+          <li class="text-xs text-whiteColor lg:text-base">
+            <i class="fa-solid fa-hand-holding-dollar text-secondaryColor !text-2xl"></i> Best Price</li>
+          
+            <li class="text-xs text-whiteColor lg:text-base">
+              <i class="fa-solid fa-crown text-secondaryColor !text-2xl"></i> Bold Flavors</li>
+            
+            <li class="text-xs text-whiteColor lg:text-base">
+              <i class="fa-solid fa-bell-concierge text-secondaryColor !text-2xl"></i> Friendly Service</li>
+        </ul>
+        <a href="#" class="btn btn-primary ml-16 md:ml-0">About Us</a>
+      </div>
+    </div>    
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>

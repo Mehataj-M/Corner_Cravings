@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Corner_Cravings</title>
   <!-- css file -->
   <link rel="stylesheet" href="./styles.css">
 
@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="../images/favicon.webp" type="image/x-icon">
 </head>
 <body>
-<header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+<header class="bg-primaryColor fixed top-0 left-0 w-full z-50 border-b border-secondaryColor">
   <nav class="container justify-between items-center flex h-14 relative">
     <div>
       <a href="#" class="font-oswald uppercase text-2xl">
@@ -45,7 +45,7 @@
 <main>
 <!--    hero section   -->
 <section id="home">
-  <div class="container flex flex-col items-center gap-10 md:flex-row md:items-stretch md:my-12">
+  <div class="container flex flex-col items-center gap-10 md:flex-row md:items-stretch ">
     <div class="mx-auto pt-5 md:basis-2/3  lg:basis-2/5 animate-movingY"><img src="../images/home page/home-img.jpg" alt="home-img" class="w-100 h-auto  md:h-full "></div>
     <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
       <h1 class="home_title uppercase">Hangout Where Hunger Hangs Out</h1>
@@ -73,8 +73,8 @@
   </div>
 </section>
 <!--   category section   -->
-<section id="category">
-  <div class="container flex flex-col gap-5 md:flex-row !md:pt-0">
+<section id="category" class="md:!my-0 md:!py-2">
+  <div class="container flex flex-col gap-5 md:flex-row ">
 
     <!-- card 1 -->
     <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
@@ -114,30 +114,32 @@
   </div>
 </section>
 <section id="promo">
+  <h3 class="container pb-14 home_title text-3xl !md:my-3">Payday Got You Feeling Down? We've Got You Covered!</h3>
   <div class="flex flex-col container gap-5 lg:gap-10 lg:flex-row">
-    <h3 class="home_title text-3xl ">Payday Got You Feeling Down? We've Got You Covered!</h3>
-
+    
     <!-- card 1 -->
-    <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg">      
-      <img src="../images/home page/promo1.jpg" alt="promo1" class="mx-auto w-full">
-      <div class="space-y-2 pt-5">
+    <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">      
+      <img src="../images/home page/promo1.jpg" alt="promo1" class="mx-auto w-48 hover:animate-movingY md:mx-5">
+      <div class="space-y-2 pt-5 md:pt-0">
         <p class="text-xs text-secondaryColor">Payday promo</p>
         <h3 class="card_title">get a 10% discount on payday week</h3>
         <p class="paragraph pb-3">Treat yourself to a delicious and affordable meal with our special payday deals.</p>
-        <a href="#" class="btn btn-primary ml-12">Order Now</a>
+        <a href="#" class="btn btn-primary ml-12 md:ml-0">Order Now</a>
       </div>
     </div>
-    <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg">      
-      <img src="../images/home page/promo2.jpg" alt="promo1" class="mx-auto w-40 ml-6 pb-2">
-      <div class="space-y-2 pt-5">
+    <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">      
+      <img src="../images/home page/promo2.jpg" alt="promo2" class="mx-auto w-48 ml-6 pb-2 hover:animate-movingY md:mx-5 md:ml-3">
+      <div class="space-y-2 pt-5 md:pt-0">
         <p class="text-xs text-secondaryColor">Payday promo</p>
         <h3 class="card_title">Free drink with any purchase over $10 </h3>
-        <p class="paragraph pb-3">End your meal on a high note with a beverage. Order now and fuel your fun!</p>
-        <a href="#" class="btn btn-primary ml-12 ">Order Now</a>
+        <p class="paragraph pb-3">End your meal on a high note with a beverage. 
+        Order now and fuel your fun!</p>
+        <a href="#" class="btn btn-primary ml-12 md:ml-0">Order Now</a>
       </div>
     </div>
   </div>
 </section>
+
 </main>
 <script src="./main.js"></script>
 </body>
