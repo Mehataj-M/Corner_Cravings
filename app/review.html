@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+  <!-- fav icon -->
+  <link rel="shortcut icon" href="../images/favicon.webp" type="image/x-icon">
+
+  <!-- swiper js -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+  <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 border-b border-secondaryColor">
+    <nav class="container justify-between items-center flex h-14 relative">
+      <div>
+        <a href="#" class="font-oswald uppercase text-2xl">
+          Corner <span class="text-secondaryColor">Cravings</span>
+        </a>
+      </div>
+      <div class="hidden absolute top-0 left-0 bg-primaryColorLight w-full py-14 border-b border-secondaryColor md:block md:py-0 md:border-none md:w-auto md:static md:ml-auto md:bg-primaryColor" id="nav-menu">
+        <ul class="flex flex-col text-center gap-5 md:flex-row">
+          <li><a href="#home" class="nav__link hover:text-secondaryColor duration-200 ease-in">Home</a></li>
+          <li><a href="#about" class="nav__link  hover:text-secondaryColor duration-200 ease-in">About</a></li>
+          <li><a href="#menu" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Menu</a></li>
+          <li><a href="#review" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Review</a></li>
+          <li><a href="#contact" class="nav__link  hover:text-secondaryColor duration-200 ease-in">Contact</a></li>
+        </ul>
+        <div class=" absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close"><i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="flex items-center gap-5">
+        <i class="fa-regular fa-moon ml-4 cursor-pointer text-2xl "></i>
+        <div class="md:hidden" id="hamburger">
+          <i class="fa-solid fa-bars cursor-pointer text-2xl "></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="review " class="bg-primaryColorLight py-20">
+    <div class="container">
+      <div class="max-w-md mx-auto text-center mb-7">
+        <h2 class="section_title">customer review</h2>
+        <div class="separator mx-auto"></div>
+        <p class="paragraph"> Join the conversation! Share your own experience and help others discover the deliciousness of Corner Cravings.</p>
+      </div>
+      <div class="swiper py-10">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 ">
+              <p class="paragraph">OMG, the Black bean burger is a flavor explosion! Juicy patty, perfectly toasted bun, and crispy onions... my taste buds are doing a happy dance!</p>
+            
+            <div class="flex items-center">
+              <img src="../images/home page/review1.jpg" alt="review_img" class="w-16 h-16 rounded-full" >
+              <div class="ml-3">
+                <p class="font-oswald text-lg">Alex Chen</p>
+                <p class="paragraph ">Designer</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-secondaryColor text-3xl ml-auto"></i>
+            </div>
+            </div>
+          </li>
+          
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 ">
+              <p class="paragraph">Great spot for a quick and tasty lunch! The chicken were crispy and tender, and the fries were perfectly salted. Bonus points for the friendly service!</p>
+            
+            <div class="flex items-center">
+              <img src="../images/home page/review2.jpg" alt="review_img" class="w-16 h-16 rounded-full" >
+              <div class="ml-3">
+                <p class="font-oswald text-lg">Emily L</p>
+                <p class="paragraph">Business Consultant</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-secondaryColor text-3xl ml-auto"></i>
+            </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 ">
+              <p class="paragraph">My go-to place when my late-night cravings hit! The cheese fries are legendary, and the milkshakes are so thick, you gotta use a spoon!.</p>
+            
+            <div class="flex items-center">
+              <img src="../images/home page/review3.jpg" alt="review_img" class="w-16 h-16 rounded-full" >
+              <div class="ml-3">
+                <p class="font-oswald text-lg">John D</p>
+                <p class="paragraph">Student</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-secondaryColor text-3xl ml-auto"></i>
+            </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 ">
+              <p class="paragraph">Loved the vegetarian wrap! tofu, and the sriracha mayo added a nice kick. The sweet potato fries with cinnamon dip were a delicious twist.</p>
+            
+            <div class="flex items-center">
+              <img src="../images/home page/review4.jpg" alt="review_img" class="w-16 h-16 rounded-full" >
+              <div class="ml-3">
+                <p class="font-oswald text-lg">Michael C</p>
+                <p class="paragraph">Fitness Trainer</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-secondaryColor text-3xl ml-auto"></i>
+            </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 ">
+              <p class="paragraph">Forget your fancy cutlery, this burger begs to be devoured with your fingers!  From the first bite to the last, it was pure juicy, cheesy, meaty goodness.</p>
+            
+            <div class="flex items-center">
+              <img src="../images/home page/review5.jpg" alt="review_img" class="w-16 h-16 rounded-full" >
+              <div class="ml-3">
+                <p class="font-oswald text-lg">Richard </p>
+                <p class="paragraph">Chef</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-secondaryColor text-3xl ml-auto"></i>
+            </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 ">
+              <p class="paragraph">The bean burger is a flavor explosion! Juicy patty, perfectly toasted bun, and those crispy onions... my taste buds are doing a happy dance! </p>
+            
+            <div class="flex items-center">
+              <img src="../images/home page/review6.jpg" alt="review_img" class="w-16 h-16 rounded-full" >
+              <div class="ml-3">
+                <p class="font-oswald text-lg">Jessica M</p>
+                <p class="paragraph">Designer</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-secondaryColor text-3xl ml-auto"></i>
+            </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 ">
+              <p class="paragraph">Forget your fancy cutlery, this burger begs to be devoured with your fingers!  From the first bite to the last, it was pure juicy, cheesy, meaty goodness. </p>
+            
+            <div class="flex items-center">
+              <img src="../images/home page/review7.jpg" alt="review_img" class="w-16 h-16 rounded-full" >
+              <div class="ml-3">
+                <p class="font-oswald text-lg">Sarah K</p>
+                <p class="paragraph">Food Blogger</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-secondaryColor text-3xl ml-auto"></i>
+            </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- swiper.js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <script>
+  const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 30,
+    autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+    },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  grabCursor: true,
+// Responsive breakpoints
+breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+     
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      
+    }
+  }
+});
+</script>
+<!-- main.js -->
+<script src="./main.js"></script>
+
+</body>
+</html>
