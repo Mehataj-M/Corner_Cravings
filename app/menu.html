@@ -14,6 +14,13 @@
 
   <!-- fav icon -->
   <link rel="shortcut icon" href="../images/favicon.webp" type="image/x-icon">
+
+  <!-- swiper js -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
 <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 border-b border-secondaryColor">
@@ -52,10 +59,10 @@
       <p class="paragraph"> We offer a wide variety of menu items to tantalize your taste buds, from juicy burgers and crispy fries to refreshing salads and decadent desserts.</p>
       <div class="tabs">
         <ul class="flex flex-wrap justify-center gap-3 py-10">
-          <li class="btn bg-primaryColorLight active">All</li>
-          <li class="btn bg-primaryColorLight">Food</li>
-          <li class="btn bg-primaryColorLight">Snack</li>
-          <li class="btn bg-primaryColorLight">Beverage</li>
+          <li data-tabs="all" class="btn bg-primaryColorLight active">All</li>
+          <li data-tabs="food" class="btn bg-primaryColorLight">Food</li>
+          <li data-tabs="snack" class="btn bg-primaryColorLight">Snack</li>
+          <li data-tabs="beverage" class="btn bg-primaryColorLight">Beverage</li>
         </ul>
       </div>
     </div>
@@ -65,7 +72,7 @@
       <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
         <!-- food -->
       
-        <li>
+        <li class="item_wrap food">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/food1.png" alt="food_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -76,7 +83,7 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
-        <li>
+        <li class="item_wrap food">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/food2.png" alt="food_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -87,7 +94,7 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
-        <li>
+        <li class="item_wrap food">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/food3.png" alt="food_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -98,7 +105,7 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
-        <li>
+        <li class="item_wrap food">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/food4.png" alt="food_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -109,7 +116,7 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
-        <li>
+        <li class="item_wrap food">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/food5.png" alt="food_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -120,7 +127,7 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
-        <li>
+        <li class="item_wrap food">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/food6.png" alt="food_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -133,7 +140,7 @@
         </li>
 
         <!-- snack -->
-        <li>
+        <li class="item_wrap snack">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/snack1.png" alt="snack_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -144,7 +151,7 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
-        <li>
+        <li class="item_wrap snack">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/snack2.png" alt="snack_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -155,7 +162,7 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
-        <li>
+        <li class="item_wrap snack">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/snack3.png" alt="snack_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -166,7 +173,7 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
-        <li>
+        <li class="item_wrap snack">
           <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/snack4.png" alt="snack_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
           <div class="pt-5">
@@ -177,12 +184,119 @@
             <p class="text-secondaryColor">$50.00</p>
           </div>
         </li>
+        <li class="item_wrap snack">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/snack5.png" alt="snack_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
 
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">Salad</h4>
+              <p class="paragraph">A healthy and refreshing snack, salads are packed with vitamins and minerals</p>
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+
+        <!-- beverages -->
+        <li class="item_wrap beverage">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/b1.png" alt="beverage_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">coco cola</h4>
+              
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+        <li class="item_wrap beverage">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/b2.png" alt="beverage_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">7 Up</h4>
+              
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+        <li class="item_wrap beverage">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/b3.png" alt="beverage_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">sprite</h4>
+              
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+        <li class="item_wrap beverage">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/b4.png" alt="beverage_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">fanta</h4>
+              
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+        <li class="item_wrap beverage">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/b5.png" alt="beverage_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">pepsi</h4>
+              
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+        <li class="item_wrap beverage">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/b6.png" alt="beverage_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">coffee</h4>
+             
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+        <li class="item_wrap beverage">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/b7.png" alt="beverage_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">milkshake</h4>
+              
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+        <li class="item_wrap beverage">
+          <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40"><img src="../images/home page/b8.png" alt="beverage_img" class="w-48 hover:scale-110 ease-linear duration-200 md:w-56 lg:w-32"></div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card_title">Fruit punch</h4>
+             
+            </div>
+            <p class="text-secondaryColor">$50.00</p>
+          </div>
+        </li>
+
+        
+        
         
       </ul>
     </div>
   </div>
 </section>
+<!-- main.js -->
 <script src="./main.js"></script>
+
+<!-- swiper.js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
