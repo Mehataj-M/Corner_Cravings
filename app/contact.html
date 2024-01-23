@@ -57,22 +57,45 @@
     <!-- comments -->
     <section>
     <div class="bg-primaryColor container ">
-      <form action="" class="flex flex-col gap-5 text-blackColor  md:w-full md:grid md:grid-cols-4 md:justify-start md:items-center">
-
+      <form action="" >
+      <div class="flex flex-col gap-5 text-blackColor  md:w-full md:grid md:grid-cols-4 md:justify-start md:items-center">
         <p class="card_title text-secondaryColor md:inline-block ">Name:</p><input type="text" name="name" id="name" class="col-span-3 rounded-md mx-4 h-10 text-center" placeholder="Enter your name">
 
         <p class="card_title text-secondaryColor md:inline-block">designation:</p><input type="text" name="name" id="name" class="col-span-3 rounded-md mx-4 h-10 text-center" placeholder="Enter your designation ">
 
         <p class="card_title text-secondaryColor md:inline-block">e-mail:</p><input type="email" name="name" id="name" class="col-span-3 rounded-md mx-4 h-10 text-center" placeholder="E-mail address">
         <p class="card_title text-secondaryColor md:inline-block">comment here:</p><textarea name="" id="" cols="10" rows="5" class="col-span-3 rounded-md text-center p-4 mx-4" placeholder="write your thoughts here..."></textarea>
-
-        <div class="flex flex-row gap-x-10 mx-auto my-6 ">
-          <input type="reset" value="Refresh" class="btn btn-primary text-base font-nunito font-semibold">
-          <input type="submit" value="Comment" class="btn btn-primary text-base font-nunito font-semibold">
+      </div>
+        <div class="flex flex-row gap-x-10 mx-auto my-10 md:w-full ">
+          <div class="md:ml-auto">
+            <input type="reset" value="Refresh" class="btn btn-primary text-base font-nunito font-semibold">
+          </div>
+          <div class="md:mr-auto">
+            <input type="submit" value="Comment" class="btn btn-primary text-base font-nunito font-semibold">
+          </div>
         </div>
+      
       </form>
     </div>
   </section>
+<footer>
+    <section id="footer">
+      <div class="container">
+        <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2">
+          <li>
+            <div class="space-y-3">
+              <a href="" class="text-4xl font-oswald uppercase">
+                Bur<span class="text-secondaryColor">ger</span>
+              </a>
+              <p>
+                
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+</footer>
   <!-- main.js -->
 <script src="./main.js"></script>
 </body>
